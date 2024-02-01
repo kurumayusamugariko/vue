@@ -46,7 +46,7 @@
                 console.log(this.items)
               })
               .catch(error => {
-                console.error('データの取得に失敗しました', error);
+                console.error('データの取得に失敗しました', error.message, error.response);
               });
           }
         }
